@@ -1,136 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="znAlLg0-t_xFOddprYIgJFowFTWxVoRU6PdO2thn8nE" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Divya Sharma - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .summary {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .item-subtitle {
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .item-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .item-description {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .cgpa {
+            background: #3498db;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-group {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-top: 3px solid #3498db;
+        }
+
+        .skill-group h4 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            background: white;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            border-left: 3px solid #3498db;
+            font-size: 0.9rem;
+        }
+
+        .cert-item {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .cert-title {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+
+        .languages {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .language {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            margin: 0 5px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 5px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<!--background="file-20220826-10690-nguhqg.avif">-->
-<body bgcolor="E6DADF"> 
-    <h1> <marquee bgcolor="pink" direction="left" behavior="alternate" loop="100">Future executive </marquee>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1 class="name">DIVYA SHARMA</h1>
+                <p class="title">MBA Finance & Analytics</p>
+                <div class="contact-info">
+                    <div class="contact-item">📞 8920436891</div>
+                    <div class="contact-item">✉️ sharmadivyasunita@gmail.com</div>
+                    <div class="contact-item">🔗 LinkedIn: Divyasharma1312</div>
+                </div>
+            </div>
+        </div>
 
-    </h1>
-    <h2>  
-        <font size=18 face="Alergian" color="purple">change your world &#128508</font>
-        
-    </h2>
-    <h3>
-       <u>are you ready?</u> 
-    </h4> 
-    <strong>be bold</strong>  <br>
-    <i>confident</i> 
-    <p>
-        <b><q> platfrom provide you insight to change your self</q></b>
-    </p>
-    <em>don't forget to beleive in yourself </em>
-    
-    <ul>
-        <li><strike>thank yourself</strike><ins> money is god</ins></li>
-        <li>make money, not friends</li>
-    </ul>
-    <align> <center>
-        <img src="C:\Users\chaman\Desktop\Money.JFIF" alt="Money Money" width="200" height="200"> <br>
-        </center>
-    </align>
-    
-    <a href= "https://www.rbi.org.in/"> <align> <center>click here</center></align></a>
-    <blockquote>
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quo molestiae eveniet labore dignissimos deserunt tempore voluptas rem facere asperiores ipsa fugiat harum amet non expedita, iure nostrum natus provident.</blockquote>
-     <p>The <abbr title="Lorem">generation</abbr> to generate text</p>
+        <div class="content">
+            <div class="summary">
+                <p>Pursuing an MBA in Finance with proficiency in Excel and analytical software. Strong foundation in Accounting, Budgeting and a proven ability to deliver actionable insights. Eager to contribute analytical skills and a detail-oriented approach to a challenging role.</p>
+            </div>
 
-     <address>Written by Ms. Neha obroi <br>
-        Visting place: Obroi Mension <br>
-    Ahemdabad, Gujarat </address>
-<br>
-        <bdo dir="rtl">Written by Ms. Neha obroi <br>
-        Visting place: Obroi Mension <br>
-    Ahemdabad, Gujarat</bdo>
-<br> <br>
-    <bdo dir="ltr">Written by Ms. Neha obroi <br>
-        Visting place: Obroi Mension <br>
-    Ahemdabad, Gujarat</bdo>
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="item">
+                    <div class="item-title">Master of Business Administration</div>
+                    <div class="item-subtitle">Atal Bihari Vajpayee School of Management & Entrepreneurship (ABVSME)</div>
+                    <div class="item-subtitle">Jawaharlal Nehru University (JNU)</div>
+                    <div class="item-date">Aug 2024 - July 2026</div>
+                    
+                    </div>
+                </div>
 
-    <ol>
-        <li>Copyright &copy</li>
-        <li>Euro money &euro;</li>
-        <li>Get registered &reg</li>
-        <li>Mark code &marker;</li>
-        <li>Trademark &trade;</li>
-        <li>Bitcoin &#8383</li>
-    </ol>
-    <br>
-    <br>
+                <div class="item">
+                    <div class="item-title">Bachelor of Commerce</div>
+                    <div class="item-subtitle">University of Delhi, Lakshmibai College</div>
+                    <div class="item-date">July 2020 - June 2023</div>           
+                    
+                    
+                    <div class="item-description">
+                        Engaging in various subjects including Corporate Accounting, Cost Accounting, Budgeting, Income Tax, Economics, Financial Management and Management Accounting among other disciplines.<br>
+                     
+                </div>
+            </div>
 
-        <ol type="A">
-        <li>Copyright &copy</li>
-        <li>Euro money &euro;</li>
-        <li>Get registered &reg</li>
-        <li>Mark code &marker;</li>
-        <li>Trademark &trade;</li>
-        <li>Bitcoin &#8383</li>
-    </ol>
-        <dl>
-         <dt>Copyright </dt>
-            <dd>Euro money</dd>
-         <dt>Get registered </dt>
-            <dd>Mark code </dd>
-            <dd>Trademark </dd>
-         <dt>Bitcoin</dt>
-        </dl>
+            <div class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="item">
+                    <div class="item-title">Intern - Commercial Group</div>
+                    <div class="item-subtitle">Oil And Natural Gas Corporation Limited (ONGC)</div>
+                    <div class="item-date">May 2025 - July 2025</div>
+                    <div class="item-description">
+                        Analyzed pricing models of crude oil across major producing areas (South Gujarat, North Gujarat, Mumbai Offshore, Mandapam, Cauvery etc.) and studied India's natural gas pricing model (Domestic, Ceiling Gas Pricing). Conducted price difference analysis of global benchmarks (Bonny Light and Brent) to analyze corresponding impact on increment gain or loss.
+                    </div>
+                </div>
+            </div>
 
-    <ol type="I">
-        <li>Copyright &copy</li>
-        <li>Euro money &euro;</li>
-        <li>Get registered &reg</li>
-        <li>Mark code &marker;</li>
-        <li>Trademark &trade;</li>
-        <li>Bitcoin &#8383</li>
-    </ol>
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Technical Skills</h4>
+                        <ul class="skills">
+                            <li>Website Design</li>
+                            <li>Canva</li>
+                            <li>Video Editing</li>
+                            <li>MS Excel</li>
+                            <li>MS PowerPoint</li>
+                            <li>MS Word</li>
+                            <li>SPSS</li>
+                            <li>Tableau</li>
+                            <li>Odoo</li>
+                            <li>Power BI</li>
+                            <li>Project Libre</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Soft Skills</h4>
+                        <ul class="skills">
+                            <li>Creative Thinking</li>
+                            <li>Detail-oriented</li>
+                            <li>Empathic Listening</li>
+                            <li>Conflict Resolution</li>
+                            <li>Teamwork</li>
+                            <li>Flexibility</li>
+                            <li>Adaptability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-<table border align="center" cellpading="4" height="30%" width=30%   bordercolor="green" >
-<caption>this is table </caption>
-<TR FONT SIZE = 20>
-<th> hii </th>
-<TD bgcolour="red"> MONEY </TD>
-<TD> img src="C:\Users\chaman\Desktop\Money.JFIF" alt="Money Money" INVEST </TD>
-<TD> HEDGING </TD> 
-</TR>
-<TR>
-<TD> GO </TD>
-<TD> a href= "https://www.rbi.org.in/" FINACE </TD>
-<TD> DERIVATIVES </TD> 
-</TR>
-</table>
-<hr  size=66 color=red >
+            <div class="section">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                
+                <div class="cert-item">
+                    <div class="cert-title">TCS ION Career Edge - Young Professional Course</div>
+                    <div class="item-description">
+                        This certified course helped prepare for job interviews and taught about etiquettes required in the corporate sector.
+                    </div>
+                </div>
 
-<table border align="center" cellpading="4" height="30%" width=30%   bordercolor="orange" >
-<caption>this is table </caption>
-<colgroup> 
-<col span="2" style="background-color:green">
-<tr FONT SIZE = 20> 
-<td colspan="5"> hee </td> 
-</colgroup>
-</tr>
-<tr>
-<td> right </td>
-<td> hii </td>
-</tr> 
-<tr>
-<TD bgcolour="red"> MONEY </TD>
-<TD rowspan="5"> INVEST </TD> 
-</tr>
-<tr>
-<TD> HEDGING </TD> 
-</TR>
-<TR>
-<TD> GO </TD>
-<TD> FINACE </TD>
-<TD> DERIVATIVES </TD> 
-</TR>
+                <div class="cert-item">
+                    <div class="cert-title">Certificate for Organizing Management Games</div>
+                    <div class="item-description">
+                        Recognized for organizing and managing educational games in college.
+                    </div>
+                </div>
 
-</table>
+                <div class="cert-item">
+                    <div class="cert-title">Business Administration Specialist Course</div>
+                    <div class="item-description">
+                        Completed from Trailhead Salesforce, enhancing business administration skills.
+                    </div>
+                </div>
 
+                <div class="cert-item">
+                    <div class="cert-title">Startup Participation</div>
+                    <div class="item-description">
+                        Gained valuable experience as a participant at Startup Bazar in Udyam Sagar, fostering a spirit of entrepreneurship.
+                    </div>
+                </div>
+
+                <div class="languages">
+                    <h4 style="color: #2c3e50; margin-bottom: 15px;">Languages</h4>
+                    <span class="language">Hindi</span>
+                    <span class="language">English</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
