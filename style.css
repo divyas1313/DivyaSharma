@@ -219,30 +219,31 @@ section h2 {
 }
 
 .quote-container {
-  font-size: 16rem;
+  font-size: 24rem;
   font-style: italic;
   font-weight: bold;
   text-align: center;
-  margin: 2px auto;
+  margin: 0 auto 10px auto;
   max-width: 700px;
   min-height: 140px;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 400px;
   color: #00008B;
 }
 
 .quote-container .quote {
   position: absolute;
   width: 100%;
+  top: 50%;
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-100%) translateY(-50%);
   transition: opacity 1s ease, transform 1s ease;
 }
 
 .quote-container .quote.active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) translateY(-50%);
 }
 
 .carousel {
@@ -323,6 +324,7 @@ section h2 {
 @media (max-width: 768px) {
   .carousel-slide {
     flex: 0 0 100%;
+    width: 100%;
   }
   .carousel-btn.left {
     left: 10px;
@@ -606,44 +608,7 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  .gallery-container img {
-    width: 100%;
-    max-width: 300px;
-  }
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    flex-direction: column;
-  }
-  .logo {
-    width: 60px;
-  }
-  .skill-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .skill-icon {
-    margin-bottom: 8px;
-    margin-right: 0;
-  }
-  .skill-bar {
-    width: 100%;
-    margin-left: 0;
-  }
-  .soft-skills-container {
-    grid-template-columns: 1fr;
-  }
-  .technical-skills-grid {
-    grid-template-columns: 1fr;
-  }
+  /* Removed mobile-specific styles to match laptop view */
 }
 
 /* Technical Skills Section */
