@@ -1,354 +1,396 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="znAlLg0-t_xFOddprYIgJFowFTWxVoRU6PdO2thn8nE" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divya Sharma - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divya Sharma</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
+  <style>
+    /* Inline styling for homepage background */
+    #homepage {
+      background-color: #E6F7FF;
+      color: #000;
+    }
 
-        .header {
-            background: #2c3e50;
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-        .name {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-        .title {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            opacity: 0.9;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            font-size: 0.9rem;
-        }
-
-        .content {
-            padding: 30px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
-
-        .summary {
-            background: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-            font-style: italic;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            border-left: 4px solid #3498db;
-        }
-
-        .item-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .item-subtitle {
-            color: #3498db;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .item-date {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-
-        .item-description {
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .cgpa {
-            background: #3498db;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            display: inline-block;
-            margin-top: 5px;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .skill-group {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            border-top: 3px solid #3498db;
-        }
-
-        .skill-group h4 {
-            color: #2c3e50;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .skills {
-            list-style: none;
-        }
-
-        .skills li {
-            background: white;
-            padding: 8px 12px;
-            margin-bottom: 8px;
-            border-radius: 3px;
-            border-left: 3px solid #3498db;
-            font-size: 0.9rem;
-        }
-
-        .cert-item {
-            background: #e8f5e8;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            border-left: 4px solid #27ae60;
-        }
-
-        .cert-title {
-            font-weight: bold;
-            color: #27ae60;
-            margin-bottom: 5px;
-        }
-
-        .languages {
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .language {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 5px 15px;
-            margin: 0 5px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 5px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .name {
-                font-size: 2rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    p, ul, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="header-content">
-                <h1 class="name">DIVYA SHARMA</h1>
-                <p class="title">MBA Finance & Analytics</p>
-                <div class="contact-info">
-            
-                    <div class="contact-item">✉️ sharmadivyasunita@gmail.com</div>
-                    <div class="contact-item">
-                        🔗 <a href="https://www.linkedin.com/in/Divyasharma1312/" target="_blank" style="color: white; text-decoration: none;">LinkedIn: Divyasharma1312</a>
-                    </div>
-                </div>
-            </div>
+
+  <!-- Header / Hero Section -->
+  <header id="homepage">
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Divya Sharma</h1>
+        <p class="hero-title">MBA Finance & Analytics</p>
+        <p class="hero-tagline">Turning Financial Data into Strategic Insights</p>
+        <div class="hero-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-shape"></div>
         </div>
-
-        <div class="content">
-            <div class="summary">
-                <p>Pursuing an MBA in Finance with proficiency in Excel and analytical software. Strong foundation in Accounting, Budgeting and a proven ability to deliver actionable insights. Eager to contribute analytical skills and a detail-oriented approach to a challenging role.</p>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="item">
-                    <div class="item-title">Master of Business Administration</div>
-                    <div class="item-subtitle">Atal Bihari Vajpayee School of Management & Entrepreneurship (ABVSME)</div>
-                    <div class="item-subtitle">Jawaharlal Nehru University (JNU)</div>
-                    <div class="item-date">Aug 2024 - July 2026</div>
-                    
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-title">Bachelor of Commerce</div>
-                    <div class="item-subtitle">University of Delhi, Lakshmibai College</div>
-                    <div class="item-date">July 2020 - June 2023</div>                  
-                    
-                    
-                    <div class="item-description">
-                        Engaging in various subjects including Corporate Accounting, Cost Accounting, Budgeting, Income Tax, Economics, Financial Management and Management Accounting among other disciplines.<br>
-                       
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Experience</h2>
-                
-                <div class="item">
-                    <div class="item-title">Intern - Commercial Group</div>
-                    <div class="item-subtitle">Oil And Natural Gas Corporation Limited (ONGC)</div>
-                    <div class="item-date">May 2025 - July 2025</div>
-                    <div class="item-description">
-                        Analyzed pricing models of crude oil across major producing areas (South Gujarat, North Gujarat, Mumbai Offshore, Mandapam, Cauvery etc.) and studied India's natural gas pricing model (Domestic, Ceiling Gas Pricing). Conducted price difference analysis of global benchmarks (Bonny Light and Brent) to analyze corresponding impact on increment gain or loss.
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-group">
-                        <h4>Technical Skills</h4>
-                        <ul class="skills">
-                            <li>Website Design</li>
-                            <li>Canva</li>
-                            <li>Video Editing</li>
-                            <li>MS Excel</li>
-                            <li>MS PowerPoint</li>
-                            <li>MS Word</li>
-                            <li>SPSS</li>
-                            <li>Tableau</li>
-                            <li>Odoo</li>
-                            <li>Power BI</li>
-                            <li>Project Libre</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-group">
-                        <h4>Soft Skills</h4>
-                        <ul class="skills">
-                            <li>Creative Thinking</li>
-                            <li>Detail-oriented</li>
-                            <li>Empathic Listening</li>
-                            <li>Conflict Resolution</li>
-                            <li>Teamwork</li>
-                            <li>Flexibility</li>
-                            <li>Adaptability</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">Certifications & Achievements</h2>
-                
-                <div class="cert-item">
-                    <div class="cert-title">TCS ION Career Edge - Young Professional Course</div>
-                    <div class="item-description">
-                        This certified course helped prepare for job interviews and taught about etiquettes required in the corporate sector.
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-title">Certificate for Organizing Management Games</div>
-                    <div class="item-description">
-                        Recognized for organizing and managing educational games in college.
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-title">Business Administration Specialist Course</div>
-                    <div class="item-description">
-                        Completed from Trailhead Salesforce, enhancing business administration skills.
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-title">Startup Participation</div>
-                    <div class="item-description">
-                        Gained valuable experience as a participant at Startup Bazar in Udyam Sagar, fostering a spirit of entrepreneurship.
-                    </div>
-                </div>
-
-                <div class="languages">
-                    <h4 style="color: #2c3e50; margin-bottom: 15px;">Languages</h4>
-                    <span class="language">Hindi</span>
-                    <span class="language">English</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#technical-skills">Technical Skills</a></li>
+      <li><a href="#soft-skills">Soft Skills</a></li>
+      <li><a href="#certificates">Certificates & Activities</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Inspirational Quotes -->
+  <div class="quote-container">
+    <p class="quote">"The goal is to turn data into information, and information into insight."<br>— Carly Fiorina</p>
+    <p class="quote">"The best way to predict the future is to create it."<br>— Peter Drucker</p>
+  </div>
+
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Pursuing an MBA in Finance with proficiency in Excel and analytical software. Strong foundation in Accounting, Budgeting, and a proven ability to deliver actionable insights. Eager to contribute analytical skills and a detail-oriented approach to a challenging role.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <h3>Master of Business Administration (Aug 2024 - July 2026)</h3>
+        <p>Atal Bihari Vajpayee School of Management & Entrepreneurship (ABVSME)<br><strong>Jawaharlal Nehru University (JNU)</strong></p>
+      </article>
+      <article>
+        <h3>Bachelor of Commerce (July 2020 - June 2023)</h3>
+        <p><strong>University of Delhi</strong>, Lakshmibai College</p>
+      </article>
+      <p>Engaging in various subjects including Corporate Accounting, Cost Accounting, Budgeting, Income Tax, Economics, Financial Management and Management Accounting among other disciplines.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Financial Analysis and Forecasting for Hindustan Unilever</h3>
+        <p>Performed an in-depth financial analysis and forecasting using historical data and Excel. Provided insights into performance and projections.</p>
+        <p><a href="Hindustan Unilever (Ratio analysis and Forcasting).xlsx" download>Download Excel File</a></p>
+      </article>
+
+      <article>
+        <h3>Common Size Statement for Tata Motors Ltd.</h3>
+        <p>Developed a Common Size Financial Statement to analyze vertical income statement and balance sheet compositions over time.</p>
+        <p><a href="Common Size Statement Tata Motors.xlsx" download>Download Excel File</a></p>
+      </article>
+
+      <article>
+        <h3>Intrinsic Growth of Asian Paints</h3>
+        <p>Analyzed ROIC, Reinvestment Rate, and Intrinsic Growth Rate to assess sustainable growth using internal funds.</p>
+        <p><a href="Asian Paints (Intrinsic Growth).xlsx" download>Download Excel File</a></p>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <article>
+        <h3>Internship - Commercial Group</h3>
+        <p><strong>Oil And Natural Gas Corporation Limited (ONGC)</strong> | May 2025 - July 2025</p>
+        <ul>
+          <li>Analyzed Pricing Models Of Crude Oil</li>
+          <li>Studied India’s natural gas pricing (Domestic, Ceiling Gas)</li>
+          <li>Compared Global Benchmarks (Bonny Light vs Brent)</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <div class="technical-skills-grid">
+        <div class="skill-card" data-skill="Website Design" data-description="Creating responsive and user-friendly websites." data-proficiency="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Website Design</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Canva" data-description="Designing graphics and visuals for marketing." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Canva</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Video Editing" data-description="Editing videos for presentations and content." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>Video Editing</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="MS Excel" data-description="Data analysis and financial modeling." data-proficiency="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3>MS Excel</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="MS PowerPoint" data-description="Creating impactful presentations." data-proficiency="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-file-powerpoint"></i>
+          </div>
+          <h3>MS PowerPoint</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="MS Word" data-description="Document creation and formatting." data-proficiency="Advanced">
+          <div class="skill-icon">
+            <i class="fas fa-file-word"></i>
+          </div>
+          <h3>MS Word</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="SPSS" data-description="Statistical analysis and data processing." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>SPSS</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Tableau" data-description="Data visualization and dashboards." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Tableau</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Odoo" data-description="ERP system management and customization." data-proficiency="Beginner">
+          <div class="skill-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Odoo</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 40%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Power BI" data-description="Business intelligence and reporting." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Power BI</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="Project Libre" data-description="Project management and scheduling." data-proficiency="Intermediate">
+          <div class="skill-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Project Libre</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="skill-card" data-skill="R" data-description="Statistical computing and data analysis." data-proficiency="Beginner">
+          <div class="skill-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3>R</h3>
+          <div class="skill-meter">
+            <div class="skill-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section id="soft-skills">
+      <h2>Soft Skills</h2>
+      <div class="soft-skills-container">
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Creative Thinking</h3>
+          <p class="skill-description">Generating innovative ideas and solutions to complex problems.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Detail-oriented</h3>
+          <p class="skill-description">Focusing on accuracy and thoroughness in all tasks.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-ear-listen"></i>
+          </div>
+          <h3>Empathic Listening</h3>
+          <p class="skill-description">Understanding and responding to others' feelings and perspectives.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Conflict Resolution</h3>
+          <p class="skill-description">Mediating disputes and finding mutually beneficial solutions.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Teamwork</h3>
+          <p class="skill-description">Collaborating effectively with others to achieve common goals.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-arrows-alt"></i>
+          </div>
+          <h3>Flexibility</h3>
+          <p class="skill-description">Adapting to changing circumstances and new challenges.</p>
+        </div>
+        <div class="soft-skill-card" tabindex="0">
+          <div class="skill-icon">
+            <i class="fas fa-adjust"></i>
+          </div>
+          <h3>Adaptability</h3>
+          <p class="skill-description">Adjusting to new environments and learning from experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+      <h2>Certificates & Activities</h2>
+      <ul class="certificate-list">
+        <li class="certificate-item">
+          <i class="certificate-icon fas fa-certificate"></i>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Designing Head of IT Club</h3>
+            <p class="certificate-description">Led the IT club, organized workshops and events to enhance technical skills among members.</p>
+          </div>
+        </li>
+        
+        </li>
+        
+    
+       
+        <li class="certificate-item">
+          <i class="certificate-icon fas fa-certificate"></i>
+          <div class="certificate-content">
+            <h3 class="certificate-title">TCS ION Career Edge - Young Professional Course</h3>
+            <p class="certificate-description">This certified course helped prepare for job interviews and taught about etiquettes required in the corporate sector.</p>
+          </div>
+        </li>
+        <li class="certificate-item">
+          <i class="certificate-icon fas fa-certificate"></i>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Certificate for Organizing Management Games</h3>
+            <p class="certificate-description">Recognized for organizing and managing educational games in college.</p>
+          </div>
+        </li>
+        <li class="certificate-item">
+          <i class="certificate-icon fas fa-certificate"></i>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Business Administration Specialist Course</h3>
+            <p class="certificate-description">Completed from Trailhead Salesforce, enhancing business administration skills.</p>
+          </div>
+        </li>
+        <li class="certificate-item">
+          <i class="certificate-icon fas fa-certificate"></i>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Startup Participation</h3>
+            <p class="certificate-description">Gained valuable experience as a participant at Startup Bazar in Udyam Sagar, fostering a spirit of entrepreneurship.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="carousel">
+        <button class="carousel-btn left" id="carousel-left" aria-label="Scroll Left">&#9664;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide"><img src="ds1.jpg" alt="DS1"></li>
+            <li class="carousel-slide"><img src="ds2.jpg" alt="DS2"></li>
+            <li class="carousel-slide"><img src="ds3.jpg" alt="DS3"></li>
+            <li class="carousel-slide"><img src="ds4.jpg" alt="DS4"></li>
+            <li class="carousel-slide"><img src="ds5.jpg" alt="DS5"></li>
+          </ul>
+        </div>
+        <button class="carousel-btn right" id="carousel-right" aria-label="Scroll Right">&#9654;</button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/Divyasharma1312" target="_blank">linkedin.com/in/Divyasharma1312</a></p>
+      <p>Email: <a href="mailto:sharmadivyasunita@gmail.com">sharmadivyasunita@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-black bg-opacity-90 py-4 px-4 shadow-lg">
+      <a href="#servicos" class="block py-2 text-white hover:text-blue-400">Serviços</a>
+      <a href="#portfolio" class="block py-2 text-white hover:text-blue-400">Portfólio</a>
+      <a href="#sobre" class="block py-2 text-white hover:text-blue-400">Sobre Nós</a>
+      <a href="#contato" class="block py-2 text-white hover:text-blue-400">Contato</a>
+    </div>
+  </footer>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
 </body>
 </html>
-```
-
