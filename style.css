@@ -447,42 +447,35 @@ a:hover {
 #technical-skills .skill-category {
   margin-bottom: 30px;
 }
-.skill-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.skill-icon {
-  font-size: 1.5em;
-  color: #00008B;
-  width: 30px;
-  margin-right: 12px;
-}
-.skill-name {
-  flex: 1;
-  font-weight: 600;
-  color: #00008B;
-}
-.skill-bar {
-  flex: 0 0 auto;
-  width: 100px;
-  height: 8px;
-  background: #e0e0e0;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-left: 18px;
-}
-.skill-progress {
-  height: 100%;
-  background: linear-gradient(90deg, #00008B, #4ecdc4);
-  border-radius: 4px;
-  transition: width 0.6s ease;
+.carousel-btn {
+  background-color: #007BFF; /* Bootstrap blue */
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: background-color 0.3s ease;
 }
 
-.soft-skills-list li {
-  background: #040404;
-  color: white;
-  font-weight: bold;
+.carousel-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.soft-skills-carousel {
+  position: relative; /* Ensure buttons are positioned correctly */
 }
 
 /* Certificates & Activities Section */
@@ -793,3 +786,4 @@ a:hover {
   text-transform: uppercase;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
