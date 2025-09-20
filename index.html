@@ -248,57 +248,127 @@
     <!-- Soft Skills -->
     <section id="soft-skills">
       <h2>Soft Skills</h2>
-      <div class="soft-skills-container">
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3>Creative Thinking</h3>
-          <p class="skill-description">Generating innovative ideas and solutions to complex problems.</p>
+      <div class="soft-skills-carousel">
+        <button class="carousel-btn left" id="soft-skills-left" aria-label="Scroll Left">&#9664;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="soft-skills-track">
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Creative Thinking: Person with lightbulb -->
+                    <circle cx="100" cy="50" r="15" fill="#FF6347" />
+                    <rect x="90" y="65" width="20" height="35" fill="#4B0082" />
+                    <ellipse cx="100" cy="30" rx="10" ry="15" fill="#FFD700" />
+                    <line x1="100" y1="45" x2="100" y2="55" stroke="#FFD700" stroke-width="2" />
+                    <path d="M95 55 Q100 60 105 55" stroke="#FFD700" stroke-width="2" fill="none" />
+                  </svg>
+                </div>
+                <h3>Creative Thinking</h3>
+                <p>Enhance your ability to think creatively and innovate in every task.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Detail-Oriented: Person with magnifying glass -->
+                    <circle cx="100" cy="50" r="15" fill="#2F4F4F" />
+                    <rect x="90" y="65" width="20" height="35" fill="#708090" />
+                    <circle cx="120" cy="40" r="20" fill="none" stroke="#00008B" stroke-width="3" />
+                    <line x1="135" y1="35" x2="140" y2="30" stroke="#00008B" stroke-width="3" />
+                  </svg>
+                </div>
+                <h3>Detail-oriented</h3>
+                <p>Pay close attention to details in every task, fostering precision.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Empathic Listening: Two people in conversation -->
+                    <circle cx="70" cy="50" r="15" fill="#FF6347" />
+                    <rect x="60" y="65" width="20" height="35" fill="#4B0082" />
+                    <circle cx="130" cy="50" r="15" fill="#2F4F4F" />
+                    <rect x="120" y="65" width="20" height="35" fill="#708090" />
+                    <path d="M85 50 Q100 40 115 50" stroke="#4ecdc4" stroke-width="3" fill="none" />
+                  </svg>
+                </div>
+                <h3>Empathic Listening</h3>
+                <p>Develop skills in empathic listening to build stronger relationships.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Conflict Resolution: People mediating -->
+                    <circle cx="60" cy="50" r="12" fill="#FF6347" />
+                    <rect x="52" y="62" width="16" height="28" fill="#4B0082" />
+                    <circle cx="100" cy="50" r="12" fill="#2F4F4F" />
+                    <rect x="92" y="62" width="16" height="28" fill="#708090" />
+                    <circle cx="140" cy="50" r="12" fill="#8B4513" />
+                    <rect x="132" y="62" width="16" height="28" fill="#D2691E" />
+                    <path d="M72 50 Q86 40 100 50 Q114 40 128 50" stroke="#FFD700" stroke-width="3" fill="none" />
+                  </svg>
+                </div>
+                <h3>Conflict Resolution</h3>
+                <p>Effective conflict resolution to resolve issues collaboratively.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Teamwork: Multiple people collaborating -->
+                    <circle cx="50" cy="50" r="12" fill="#FF6347" />
+                    <rect x="42" y="62" width="16" height="28" fill="#4B0082" />
+                    <circle cx="100" cy="50" r="12" fill="#2F4F4F" />
+                    <rect x="92" y="62" width="16" height="28" fill="#708090" />
+                    <circle cx="150" cy="50" r="12" fill="#8B4513" />
+                    <rect x="142" y="62" width="16" height="28" fill="#D2691E" />
+                    <rect x="70" y="90" width="60" height="20" fill="#FFD700" />
+                  </svg>
+                </div>
+                <h3>Teamwork</h3>
+                <p>Master teamwork to succeed in collaborative environments.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Flexibility: Person in dynamic pose -->
+                    <circle cx="100" cy="50" r="15" fill="#FF6347" />
+                    <rect x="90" y="65" width="20" height="35" fill="#4B0082" />
+                    <path d="M85 80 Q100 70 115 80 Q130 90 115 100" stroke="#4ecdc4" stroke-width="3" fill="none" />
+                  </svg>
+                </div>
+                <h3>Flexibility</h3>
+                <p>Adapt to changing situations with flexibility and ease.</p>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="skill-card">
+                <div class="illustration">
+                  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Adaptability: Person with mobile tools -->
+                    <circle cx="100" cy="50" r="15" fill="#2F4F4F" />
+                    <rect x="90" y="65" width="20" height="35" fill="#708090" />
+                    <rect x="110" y="70" width="30" height="15" fill="#FFD700" />
+                    <circle cx="125" cy="85" r="5" fill="#00008B" />
+                  </svg>
+                </div>
+                <h3>Adaptability</h3>
+                <p>Thrive in dynamic environments through adaptability.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-search"></i>
-          </div>
-          <h3>Detail-oriented</h3>
-          <p class="skill-description">Focusing on accuracy and thoroughness in all tasks.</p>
-        </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-ear-listen"></i>
-          </div>
-          <h3>Empathic Listening</h3>
-          <p class="skill-description">Understanding and responding to others' feelings and perspectives.</p>
-        </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-handshake"></i>
-          </div>
-          <h3>Conflict Resolution</h3>
-          <p class="skill-description">Mediating disputes and finding mutually beneficial solutions.</p>
-        </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3>Teamwork</h3>
-          <p class="skill-description">Collaborating effectively with others to achieve common goals.</p>
-        </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-arrows-alt"></i>
-          </div>
-          <h3>Flexibility</h3>
-          <p class="skill-description">Adapting to changing circumstances and new challenges.</p>
-        </div>
-        <div class="soft-skill-card" tabindex="0">
-          <div class="skill-icon">
-            <i class="fas fa-adjust"></i>
-          </div>
-          <h3>Adaptability</h3>
-          <p class="skill-description">Adjusting to new environments and learning from experiences.</p>
-        </div>
+        <button class="carousel-btn right" id="soft-skills-right" aria-label="Scroll Right">&#9654;</button>
       </div>
+      <div class="carousel-dots" id="soft-skills-dots"></div>
     </section>
 
     <!-- Certificates -->
@@ -394,3 +464,4 @@
 
 </body>
 </html>
+
