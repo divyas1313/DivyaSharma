@@ -659,16 +659,19 @@ footer {
 
 /* EDUCATION SECTION - EXPERIENCE FORMAT WITH ICONS */
 
-
+/* EDUCATION SECTION - FIXED VERSION */
 
 #education {
   padding: 60px 40px;
   width: 100%;
-  background-color: #fff6f6;
-  color: #f2f1f5;
+  background-color: #f8f6f0; /* Pearl white background - same as other sections */
+  color: var(--main-bg); /* Use main dark color for text instead of light color */
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
 }
 
 #education::after {
@@ -684,12 +687,15 @@ footer {
 }
 
 #education h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #f6f5f8;
-  text-align: center;
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  padding: 15px 25px;
+  border-radius: 8px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -729,11 +735,11 @@ footer {
 }
 
 .education-content {
-  background: #f7f3f0;
+  background: #f7f3f0; /* Pearl white background */
   border: 2px solid var(--border-color);
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 6px 16px rgba(242, 242, 242, 0.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   display: flex;
@@ -743,21 +749,21 @@ footer {
 
 .education-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgb(253, 249, 249);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .education-content h3 {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #f9f9f9;
+  color: var(--main-bg); /* Dark color for visibility */
   font-family: 'Poppins', sans-serif;
 }
 
 .education-content .degree {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #5a4a6a;
+  color: var(--main-bg); /* Dark color for visibility */
   margin-bottom: 10px;
   font-family: 'Georgia', serif;
 }
@@ -765,7 +771,7 @@ footer {
 .education-content .year {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #6a5a7a;
+  color: var(--main-bg); /* Dark color for visibility */
   margin-bottom: 15px;
   font-style: italic;
 }
@@ -773,8 +779,191 @@ footer {
 .education-content .description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #5a4a6a;
+  color: var(--main-bg); /* Dark color for visibility */
   font-family: 'Inter', sans-serif;
+}
+
+/* Alternative styles for the new HTML structure you're using */
+.education-section {
+  background-color: #f8f6f0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: var(--main-bg);
+  border: 1px solid var(--border-color);
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-title {
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.education-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--main-bg) 50%, transparent 100%);
+  margin: 30px 0;
+}
+
+.education-entry {
+  background: #f7f3f0;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: var(--main-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.medal-icon {
+  background-color: var(--main-bg);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.medal-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.degree-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--main-bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+.degree-duration {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--main-bg);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.institution {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--main-bg);
+  margin-bottom: 8px;
+  font-family: 'Georgia', serif;
+}
+
+.university, .college {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--main-bg);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--main-bg);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Experience section similar fix */
+.experience-section {
+  background-color: #f8f6f0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: var(--main-bg);
+  border: 1px solid var(--border-color);
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-title {
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.experience-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--main-bg) 50%, transparent 100%);
+  margin: 30px 0;
+}
+
+.experience-entry {
+  background: #f7f3f0;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  color: var(--main-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.experience-description {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.experience-description li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--main-bg);
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.experience-description li:before {
+  content: "• ";
+  color: var(--main-bg);
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 /* BIGGER EXPERIENCE ICONS */
@@ -1308,3 +1497,4 @@ footer {
     font-size: 2.5rem;
   }
 }
+
