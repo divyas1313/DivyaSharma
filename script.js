@@ -158,8 +158,19 @@ document.addEventListener('DOMContentLoaded', function () {
     updateSoftSkillsCarousel();
   });
 
-  
-  
+  // Quote animation: show one quote at a time, moving left to right
+  const quotes = document.querySelectorAll('.quote-container .quote');
+  let currentQuoteIndex = 0;
+
+  function showQuote(index) {
+    quotes.forEach((quote, i) => {
+      if (i === index) {
+        quote.classList.add('active');
+      } else {
+        quote.classList.remove('active');
+      }
+    });
+  }
 
 function cycleQuotes() {
   currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
