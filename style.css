@@ -1309,3 +1309,34 @@ footer {
   }
 }
 
+.education-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c2633; /* Darker purple */
+  font-family: 'Poppins', sans-serif;
+}
+
+.education-content .degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3a2e4d; /* Dark purple */
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.education-content .year {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4b3f56; /* Darker purple */
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.education-content .description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3a2e4d; /* Dark purple */
+  font-family: 'Inter', sans-serif;
+}
+
