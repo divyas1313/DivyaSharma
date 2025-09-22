@@ -749,7 +749,7 @@ footer {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #f9f9f9;
+  color:#4a4458;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1338,5 +1338,6 @@ footer {
   color: #3a2e4d; /* Dark purple */
   font-family: 'Inter', sans-serif;
 }
+
 
 
