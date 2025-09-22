@@ -660,12 +660,11 @@ footer {
 /* EDUCATION SECTION - EXPERIENCE FORMAT WITH ICONS */
 
 
-
 #education {
   padding: 60px 40px;
   width: 100%;
   background-color: #fff6f6;
-  color: #f2f1f5;
+  color: #4a4458;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   position: relative;
@@ -1339,4 +1338,5 @@ footer {
   color: #3a2e4d; /* Dark purple */
   font-family: 'Inter', sans-serif;
 }
+
 
